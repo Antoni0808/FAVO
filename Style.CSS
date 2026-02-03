@@ -1,0 +1,67 @@
+/* 1. Grundinställningar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Gör det lättare att räkna på bredd/höjd */
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f7f6; /* Ljusgrå bakgrund för en mjuk känsla */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* 2. Header / Rubrikområdet */
+header {
+    background: #2c3e50; /* Elegant mörkblå */
+    color: #ffffff;
+    padding: 2rem 1rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+}
+
+/* 3. Huvudinnehåll */
+main {
+    max-width: 800px;
+    margin: 2rem auto; /* Centrerar innehållet */
+    padding: 2rem;
+    background: #fff;
+    border-radius: 8px; /* Mjukt rundade hörn */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    flex: 1; /* Gör att main tar upp all ledig plats så footern hamnar längst ner */
+}
+
+main p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+/* 4. Footer */
+footer {
+    background: #222;
+    color: #bbb;
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.9rem;
+}
+
+/* 5. Responsivitet (Anpassning för mobiler) */
+@media (max-width: 600px) {
+    main {
+        margin: 1rem;
+        padding: 1rem;
+    }
+    
+    header h1 {
+        font-size: 1.8rem;
+    }
+}
